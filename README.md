@@ -112,7 +112,7 @@ while True:
     if mac.lower() == "exit":  
         break
     c.send(mac.encode())
-    ip = c.recv(1024).decode()
+    ip = c.recv(1024).decode() 
     print(f"IP Address for {mac}: {ip}")
 c.close()
 
